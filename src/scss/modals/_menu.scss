@@ -45,7 +45,9 @@
     flex-direction: column;
   }
 }
-
+.menu::-webkit-scrollbar {
+  display: none;
+}
 .menu--opened {
   display: flex;
   transition: all 0.3s linear;
