@@ -1,0 +1,94 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: -100%;
+  min-width: 320px;
+  max-width: 360px;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+    16px 0px 52px rgba(14, 24, 80, 0.2);
+  overflow-y: auto;
+  z-index: 20;
+  transition: all 0.3s linear;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+    margin-bottom: 10px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 32px;
+    flex-grow: 1;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__buttons {
+    display: flex;
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.menu--opened {
+  display: flex;
+  transition: all 0.3s linear;
+  left: 0;
+}
+
+@media (min-width: $breakpoint-s360) {
+  .menu__header {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .menu__container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: $breakpoint-m) {
+  .menu__header {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: none;
+    width: 305px;
+    height: 100vh;
+    background-color: #fff;
+    transition-property: none;
+  }
+
+  .menu__container {
+    justify-content: space-between;
+  }
+
+  .menu__header {
+    padding-top: 35px;
+  }
+}

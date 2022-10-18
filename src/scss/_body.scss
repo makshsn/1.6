@@ -1,0 +1,17 @@
+.body {
+  position: relative;
+  min-width: 320px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "TT Lakes", sans-serif;
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+@media (min-width: $breakpoint-xl) {
+  .body__container {
+    display: flex;
+    border-right: 1px solid $shadow-color;
+    border-left: 1px solid $shadow-color;
+  }
+}

@@ -1,0 +1,60 @@
+.types {
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__button {
+    align-self: flex-end;
+    border: 2px solid #ff3e79;
+    background: url(../img/dropdown.svg) center no-repeat;
+    transition: background-color 0.25s ease;
+  }
+
+  &__show-more {
+    display: none;
+    transition: color 0.25s ease;
+  }
+
+  &__item {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 16px;
+    padding: 16px;
+    height: 160px;
+    font-weight: 500;
+    color: $text-color;
+  }
+
+  &__name {
+    align-self: flex-start;
+  }
+
+  &__show-more:hover {
+    color: $btn-color;
+    transition: color 0.25s ease;
+  }
+}
+
+.card:hover > .types__button {
+  background-color: rgba($color: $btn-color, $alpha: 0.25);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+@media (min-width: $breakpoint-m) {
+  .types {
+    &__fade {
+      display: none;
+    }
+
+    &__item {
+      margin-right: 0;
+    }
+
+    &__show-more {
+      display: flex;
+      padding: 0;
+      margin-left: 24px;
+      margin-bottom: 32px;
+    }
+  }
+}

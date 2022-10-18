@@ -1,0 +1,76 @@
+.header {
+  box-shadow: 0 1px $shadow-color;
+  background-color: #fff;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 16px;
+  }
+
+  &__close-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__close-btn {
+    background-color: $btn-color;
+    background-image: url(../img/close.svg);
+  }
+
+  &__search-btn {
+    background-color: $btn-color;
+    background-image: url(../img/search.svg);
+  }
+
+  &__burger-logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__burger {
+    background-color: $btn-color;
+    background-image: url(../img/burger.svg);
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+  }
+
+  &__divider {
+    display: block;
+    width: 2px;
+    height: 32px;
+    margin: 0 20px;
+    background: $divider-color;
+    border-radius: 1px;
+  }
+}
+
+.hide-divider {
+  display: none;
+}
+
+@media (min-width: $breakpoint-m) {
+  .header__inner {
+    padding: 18px 24px;
+  }
+
+  .header__burger {
+    margin-right: 0;
+  }
+
+  .hide-divider {
+    display: block;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .header {
+    display: none;
+    &__close-btn {
+      display: none;
+    }
+  }
+}

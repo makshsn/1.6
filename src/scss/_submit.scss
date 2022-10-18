@@ -1,0 +1,18 @@
+.submit {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-left: auto;
+  background: $btn-color;
+  border-style: none;
+  border-radius: 16px;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}

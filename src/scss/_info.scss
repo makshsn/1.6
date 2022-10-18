@@ -1,0 +1,65 @@
+.info {
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+  }
+
+  &__email {
+    margin-bottom: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: -0.2px;
+    line-height: 24px;
+    color: $text-color;
+    transition: color 0.3s;
+  }
+
+  &__email:hover {
+    color: $btn-color;
+    transition: color 0.3s;
+  }
+
+  &__phone {
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+    color: $text-color;
+    line-height: 32px;
+    transition: color 0.3s;
+  }
+
+  &__phone:hover {
+    color: $btn-color;
+    transition: color 0.3s;
+  }
+
+  &__languages {
+    text-transform: uppercase;
+  }
+
+  &__languages-item {
+    cursor: pointer;
+    margin-right: 7px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    transition: color 0.3s;
+    &--active {
+      color: $btn-text-color;
+      cursor: default;
+    }
+  }
+
+  &__languages-item:hover:not(.info__languages-item--active) {
+    color: $btn-color;
+    transition: color 0.3s;
+  }
+}
+
+@media (min-width: $breakpoint-m) {
+  .info__contacts {
+    margin-bottom: 40px;
+  }
+}

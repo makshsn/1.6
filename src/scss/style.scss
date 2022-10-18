@@ -1,0 +1,50 @@
+@import "_vendor";
+@import "_vars";
+@import "_visually-hidden";
+@import "_fonts";
+@import "_swiper";
+@import "_body";
+@import "_button";
+@import "_fade";
+@import "_show-more";
+@import "_blur";
+@import "_submit";
+@import "_action-buttons";
+@import "_info";
+@import "_nav";
+@import "_card";
+@import "_logo-img";
+
+@import "header/_header";
+
+@import "modals/_menu";
+@import "modals/_feedback";
+@import "modals/_call";
+
+@import "main/_main";
+@import "main/_slide-menu";
+@import "main/_brands";
+@import "main/_content";
+@import "main/_types";
+@import "main/_cards";
+@import "main/_title";
+@import "main/_prices";
+@import "main/_table";
+@import "main/_footer";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}

@@ -1,0 +1,26 @@
+.show-more {
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.show-more::before {
+  content: url(../img/expand.svg);
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  transition: transform 0.5s;
+}
+
+.show-more--active::before {
+  transform: rotate(-180deg);
+  transition: transform 0.5s;
+}

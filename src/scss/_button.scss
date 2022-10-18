@@ -1,0 +1,51 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.button:last-child {
+  margin-right: 0;
+  transition: background-color 0.5s;
+}
+
+.button:hover:not(.card__button):not(.types__button) {
+  background-color: $btn-color--dark;
+  transition: background-color 0.5s;
+}
+
+.repair-button {
+  background-color: $btn-color;
+  background-image: url(../img/repair.svg);
+}
+
+.checkstatus-button {
+  background-color: $btn-color;
+  background-image: url(../img/checkstatus.svg);
+}
+
+@media (min-width: $breakpoint-m) {
+  .button:last-child {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .repair-button {
+    margin-left: 8px;
+  }
+
+  .checkstatus-button {
+    margin-left: 8px;
+  }
+}

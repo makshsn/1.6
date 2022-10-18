@@ -1,0 +1,138 @@
+.prices {
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 16px;
+    padding: 16px;
+    width: 260px;
+    height: 200px;
+    border-style: none;
+  }
+
+  &__name {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+    color: $btn-text-color;
+    mix-blend-mode: normal;
+    opacity: 0.72;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+
+  &__button {
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    background: $btn-color;
+    border-style: none;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__terms {
+    max-width: 480px;
+    padding: 0 16px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $text-color;
+  }
+
+  &__offer {
+    display: inline-block;
+    padding: 0 16px;
+    margin-bottom: 40px;
+    font-weight: 500;
+    color: $text-color;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    transition: color 0.3s;
+  }
+
+  &__offer:hover {
+    color: $btn-color;
+    transition: color 0.3s;
+  }
+
+  &__offer > img {
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  &__table {
+    display: none;
+  }
+}
+
+@media (min-width: $breakpoint-m) {
+  .prices {
+    &__cards {
+      display: none;
+    }
+
+    &__terms {
+      padding: 0 24px;
+    }
+
+    &__offer {
+      padding: 0 24px;
+    }
+
+    &__table {
+      display: table;
+      border-collapse: collapse;
+      margin: 0 auto;
+      margin-bottom: 24px;
+      padding: 24px;
+      min-width: 720px;
+      width: 100%;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .prices {
+    &__cards {
+      display: none;
+    }
+
+    &__cards {
+      display: none;
+    }
+
+    &__terms {
+      padding: 0 32px;
+    }
+
+    &__offer {
+      padding: 0 32px;
+    }
+  }
+}

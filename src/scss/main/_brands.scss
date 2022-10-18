@@ -1,0 +1,50 @@
+.brands {
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    margin-right: 16px;
+    padding: 0 16px;
+    height: 72px;
+  }
+
+  &__show-more {
+    display: none;
+    transition: color 0.25s ease;
+  }
+
+  &__show-more:hover {
+    color: $btn-color;
+    transition: color 0.25s ease;
+  }
+}
+
+@media (min-width: $breakpoint-m) {
+  .brands {
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__fade {
+      display: none;
+    }
+
+    &__show-more {
+      display: flex;
+      padding: 0;
+      margin-left: 24px;
+      margin-bottom: 32px;
+    }
+
+    &__item {
+      margin-right: 0;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-l) {
+  .brands__show-more {
+    margin-left: 32px;
+  }
+}

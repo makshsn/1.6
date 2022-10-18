@@ -1,0 +1,29 @@
+.action-buttons {
+  display: none;
+  &__call {
+    background-color: $btn-color;
+    background-image: url(../img/call.svg);
+  }
+
+  &__chat {
+    background-color: $btn-color;
+    background-image: url(../img/chat.svg);
+  }
+
+  &__profile {
+    background-color: $btn-color;
+    background-image: url(../img/profile.svg);
+  }
+}
+
+@media (min-width: $breakpoint-m) {
+  .action-buttons {
+    display: flex;
+  }
+}
+
+@media (min-width: $breakpoint-xl) {
+  .action-buttons {
+    display: none;
+  }
+}
