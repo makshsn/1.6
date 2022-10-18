@@ -33,12 +33,12 @@
 
   .swiper-collapsed {
     max-height: 160px;
-    transition: max-height 0.5s linear;
+    transition: max-height 0.2s linear;
   }
 
   .swiper-expanded {
     max-height: 1000px;
-    transition: max-height 0.5s linear;
+    transition: max-height 0.2s linear;
   }
 
   .swiper-wrapper {
