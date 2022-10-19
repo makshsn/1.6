@@ -11,12 +11,12 @@
 
   &__show-more {
     display: none;
-    transition: color 0.25s ease;
+    transition: color 0.55s ease;
   }
 
   &__show-more:hover {
     color: $btn-color;
-    transition: color 0.25s ease;
+    transition: color 0.55s ease;
   }
 }
 

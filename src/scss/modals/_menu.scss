@@ -12,7 +12,7 @@
     16px 0px 52px rgba(14, 24, 80, 0.2);
   overflow-y: auto;
   z-index: 20;
-  transition: all 0.3s linear;
+  transition: all 0.60s linear;
   &__header {
     display: flex;
     justify-content: space-between;
@@ -50,7 +50,7 @@
 }
 .menu--opened {
   display: flex;
-  transition: all 0.3s linear;
+  transition: all 0.30s linear;
   left: 0;
 }
 
